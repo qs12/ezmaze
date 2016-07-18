@@ -11,15 +11,38 @@ p {
 
 #placeholder {
 	width: 85%;
-	height: 600px;
+	max-width: 800px;
+	height: 90%;
 	margin-left: auto;
 	margin-right: auto;
 
 }
 
+/* Using absolute positioning with flexible layout:
+
+#placeholder {
+	position: absolute;
+	left:5%;
+	top: 5%;
+	bottom: 5%;
+	width: 100%;
+	height: 90%;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+*/
 #header {
 	background-color: blue;
+	position: fixed;
+	width: 94%;
+	top: 0%;
+	left: 3%;
 
+}
+
+#menu ul {
+	margin-left: -2.5em;
 }
 
 #menu li {
@@ -27,8 +50,17 @@ p {
 	width: 7em;
 	text-align: center;
 	float: left;
+	border: 3px black solid;
 
 
+}
+
+#menu li ul {
+	display: none;
+}
+
+#menu li:hover > ul {
+	display: block;
 }
 
 #menu a {
@@ -57,7 +89,7 @@ p {
 	float: center;
 	background-color: green;
 	width: 100%;
-	height: 500px;
+	height: 100%;
 	overflow: auto;
 
 	
