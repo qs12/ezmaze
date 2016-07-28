@@ -93,7 +93,6 @@
 		?>
 	</div>
 </div>
-</div>
 
 <script type="text/javascript">
 // init variables
@@ -207,6 +206,6 @@ var slideTimer = setInterval(function() {autoChangeSlides(); }, 3000);
 
 
 
-
+	</div>
 </body>
 </html>
